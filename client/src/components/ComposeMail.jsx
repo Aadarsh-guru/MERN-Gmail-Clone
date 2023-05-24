@@ -62,7 +62,7 @@ const ComposeMail = ({ setOpen, open }) => {
     const sentEmailService = useApi(API_URLS.saveSentEmail)
     const saveDraftEmail = useApi(API_URLS.saveDraftEmails)
 
-    const accountHolderEmail = "aadarshkumar8871860855@gmail.com"
+    const accountHolderEmail = process.env.REACT_APP_YOUR_EMAIL
 
     const config = {
         Host: "smtp.elasticemail.com",
